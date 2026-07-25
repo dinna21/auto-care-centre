@@ -14,23 +14,26 @@ export function Contact() {
                 {/* Left Column: Contact Form */}
                 <div className="flex flex-col">
 
-                    <motion.div className="flex items-center gap-2"
+                    <motion.div
+                        className="flex items-center gap-2 px-3 py-1 rounded-full"
                         initial={{ y: -20, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         viewport={{ once: true }}
-                        transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
+                        transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70 }}
                     >
                         <span className="size-1.5 rounded-full bg-gold"></span>
-                        <span className="text-sm text-navy tracking-[0.15em] uppercase">
+                        <span className="text-xs font-semibold tracking-wider text-navy uppercase">
                             Contact
                         </span>
                     </motion.div>
 
-                    <motion.h2 className="text-3xl md:text-[40px]/11 text-navy mt-5 leading-tight font-medium max-w-[400px]"
+                    <div className="w-24 h-[2px] bg-gradient-to-r from-navy via-gold to-transparent mt-4" />
+
+                    <motion.h2 className="text-3xl sm:text-4xl md:text-[38px] text-navy font-bold mt-4 leading-tight tracking-tight max-w-[420px]"
                         initial={{ y: 50, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         viewport={{ once: true }}
-                        transition={{ type: "spring", stiffness: 240, damping: 70, mass: 1 }}
+                        transition={{ type: "spring", stiffness: 240, damping: 70 }}
                     >
                         Connect with us <br />to get the best deal
                     </motion.h2>
