@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export function Gallery() {
     const gridRef = useRef<HTMLDivElement>(null);
@@ -88,6 +89,33 @@ export function Gallery() {
                     className="h-full rounded-full bg-gold transition-[width] duration-150 ease-out"
                     style={{ width: `${Math.max(scrollProgress, 6)}%` }}
                 />
+            </div>
+
+            <div className="max-w-7xl mx-auto mb-10 md:mb-14 flex flex-col items-start">
+              <motion.div
+                className="flex items-center gap-2 px-3 py-1 rounded-full"
+                initial={{ y: -20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70 }}
+              >
+                <span className="size-1.5 rounded-full bg-gold"></span>
+                <span className="text-xs font-semibold tracking-wider text-navy uppercase">
+                  OUR WORK
+                </span>
+              </motion.div>
+
+              <div className="w-24 h-[2px] bg-gradient-to-r from-navy via-gold to-transparent mt-4" />
+
+              <motion.h2
+                className="text-3xl sm:text-4xl md:text-[38px] text-navy font-bold mt-4 leading-tight tracking-tight max-w-[420px]"
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ type: "spring", stiffness: 240, damping: 70 }}
+              >
+                Real Results, Real Shine
+              </motion.h2>
             </div>
 
             <div
