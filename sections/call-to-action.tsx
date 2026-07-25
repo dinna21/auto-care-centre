@@ -12,14 +12,15 @@ export function CallToAction() {
   return (
     <section className="py-20 md:py-28 px-4 md:px-16 lg:px-24 xl:px-32 w-full bg-offwhite flex flex-col items-center justify-center text-center">
       <div className="max-w-4xl mx-auto flex flex-col items-center">
-        <motion.div className="flex items-center gap-2 mb-4"
+        <motion.div
+          className="flex items-center gap-2 px-3 py-1 rounded-full mb-4"
           initial={{ y: -20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
+          transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70 }}
         >
           <span className="size-1.5 rounded-full bg-gold"></span>
-          <span className="text-sm text-navy tracking-[0.15em] uppercase">
+          <span className="text-xs font-semibold tracking-wider text-navy uppercase">
             Our Work
           </span>
         </motion.div>
@@ -36,11 +37,13 @@ export function CallToAction() {
           <Image height={139} width={251} src={galleryImage2} alt="Freshly detailed car finished result" className="absolute w-[180px] md:w-[251px] h-[90px] md:h-[139px] object-cover rounded-[10px] border-2 border-white shadow-[0_25px_50px_-12px_rgba(6,14,27,0.4)] transition-all duration-500 ease-out z-10 translate-y-[-10px] group-hover/cta-images:translate-y-[-22px] group-hover/cta-images:scale-105" />
         </div>
 
-        <motion.h2 className="text-3xl md:text-[40px] font-semibold text-navy tracking-tight max-w-[520px] mb-3"
+        <div className="w-24 h-[2px] bg-gradient-to-r from-navy via-gold to-transparent" />
+
+        <motion.h2 className="text-3xl sm:text-4xl md:text-[38px] text-navy font-bold mt-4 leading-tight tracking-tight max-w-[420px] mb-3"
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ type: "spring", stiffness: 240, damping: 70, mass: 1 }}
+          transition={{ type: "spring", stiffness: 240, damping: 70 }}
         >
           See Our Work in Action
         </motion.h2>
