@@ -51,55 +51,55 @@ export interface TestimonialItem {
 // data/data.ts
 
 export const testimonialsCol1 = [
-    {
-        name: "Shalini Nimashika",
-        location: "Negombo",
-        avatar: "/assets/avatar-placeholder.png",
-        text: "My car was cleaned perfectly inside and out. Great attention to detail and very professional work. Great care taken with the vehicle. Will definitely visit again.",
-    },
-    {
-        name: "Shehan Ruwinda",
-        location: "Negombo",
-        avatar: "/assets/avatar-placeholder.png",
-        text: "Got a full car service done along with car interior cleaning, and I'm very happy with the work. The service was professional and done on time as expected. The interior looks fresh and well finished.",
-    },
-    {
-        name: "Roshane Perera",
-        location: "Negombo",
-        avatar: "/assets/avatar-placeholder.png",
-        text: "Really impressed with the service quality. The team did a great job and handled everything carefully. My car feels great after the service, and the pricing was very reasonable.",
-    },
-    {
-        name: "Shalki Sasanka",
-        location: "Negombo",
-        avatar: "/assets/avatar-placeholder.png",
-        text: "One of the best car wash centres I have visited. The quality of work is excellent.",
-    },
+  {
+    name: "Shalini Nimashika",
+    location: "Negombo",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Shalini%20Nimashika&backgroundColor=0A192F&textColor=F5C518",
+    text: "My car was cleaned perfectly inside and out. Great attention to detail and very professional work. Great care taken with the vehicle. Will definitely visit again.",
+  },
+  {
+    name: "Shehan Ruwinda",
+    location: "Negombo",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Shehan%20Ruwinda&backgroundColor=0A192F&textColor=F5C518",
+    text: "Got a full car service done along with car interior cleaning, and I'm very happy with the work. The service was professional and done on time as expected. The interior looks fresh and well finished.",
+  },
+  {
+    name: "Roshane Perera",
+    location: "Negombo",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Roshane%20Perera&backgroundColor=0A192F&textColor=F5C518",
+    text: "Really impressed with the service quality. The team did a great job and handled everything carefully. My car feels great after the service, and the pricing was very reasonable.",
+  },
+  {
+    name: "Shalki Sasanka",
+    location: "Negombo",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Shalki%20Sasanka&backgroundColor=0A192F&textColor=F5C518",
+    text: "One of the best car wash centres I have visited. The quality of work is excellent.",
+  },
 ];
 
 export const testimonialsCol2 = [
-    {
-        name: "Ashika De Silva",
-        location: "Negombo",
-        avatar: "/assets/avatar-placeholder.png",
-        text: "Excellent car service experience! The body wash was perfect and the car looked spotless. Very friendly and professional staff with great attention to detail. Highly recommended!",
-    },
-    {
-        name: "Roshen Senadeera",
-        location: "Negombo",
-        avatar: "/assets/avatar-placeholder.png",
-        text: "Excellent service and very professional staff. I did my full vehicle service with them, and the work was done accurately and on time. Highly recommended.",
-    },
-    {
-        name: "Rajitha Peiris",
-        location: "Negombo",
-        avatar: "/assets/avatar-placeholder.png",
-        text: "Excellent car wash and servicing. The work was done perfectly, and the owner is friendly, professional, and well-informed about car service. Really happy with the service.",
-    },
-    {
-        name: "Hizlan Mohomad",
-        location: "Negombo",
-        avatar: "/assets/avatar-placeholder.png",
-        text: "I had a really good experience at this car wash center. Prices are reasonable for the quality of service. Highly recommended.",
-    },
+  {
+    name: "Ashika De Silva",
+    location: "Negombo",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Ashika%20De%20Silva&backgroundColor=0A192F&textColor=F5C518",
+    text: "Excellent car service experience! The body wash was perfect and the car looked spotless. Very friendly and professional staff with great attention to detail. Highly recommended!",
+  },
+  {
+    name: "Roshen Senadeera",
+    location: "Negombo",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Roshen%20Senadeera&backgroundColor=0A192F&textColor=F5C518",
+    text: "Excellent service and very professional staff. I did my full vehicle service with them, and the work was done accurately and on time. Highly recommended.",
+  },
+  {
+    name: "Rajitha Peiris",
+    location: "Negombo",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Rajitha%20Peiris&backgroundColor=0A192F&textColor=F5C518",
+    text: "Excellent car wash and servicing. The work was done perfectly, and the owner is friendly, professional, and well-informed about car service. Really happy with the service.",
+  },
+  {
+    name: "Hizlan Mohomad",
+    location: "Negombo",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Hizlan%20Mohomad&backgroundColor=0A192F&textColor=F5C518",
+    text: "I had a really good experience at this car wash center. Prices are reasonable for the quality of service. Highly recommended.",
+  },
 ];
