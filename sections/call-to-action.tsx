@@ -3,6 +3,12 @@
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
+
+const MicroSlats = dynamic(() => import("@/components/micro-slats/MicroSlats"), {
+  ssr: false,
+  loading: () => <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(10,22,40,0.04),transparent_72%)]" />,
+});
 
 const galleryImage1 = "/assets/galleryImage9.webp";
 const galleryImage2 = "/assets/galleryImage2.jpg";
@@ -10,8 +16,37 @@ const galleryImage3 = "/assets/galleryImage4.webp";
 
 export function CallToAction() {
   return (
-    <section className="py-20 md:py-28 px-4 md:px-16 lg:px-24 xl:px-32 w-full bg-offwhite flex flex-col items-center justify-center text-center">
-      <div className="max-w-4xl mx-auto flex flex-col items-center">
+    <section className="relative isolate overflow-hidden py-20 md:py-28 px-4 md:px-16 lg:px-24 xl:px-32 w-full bg-offwhite flex flex-col items-center justify-center text-center">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          maskImage: "radial-gradient(ellipse at center, transparent 25%, black 80%)",
+          WebkitMaskImage: "radial-gradient(ellipse at center, transparent 25%, black 80%)",
+        }}
+      >
+        <MicroSlats
+          preset="tide"
+          color="#0a1628"
+          glintColor="#f5c518"
+          backgroundColor="transparent"
+          slatWidth={9}
+          slatHeight={22}
+          gap={5}
+          roundness={0.8}
+          speed={0.16}
+          glint={0.5}
+          contrast={0.9}
+          perspective={0.3}
+          interactive={false}
+          intro={false}
+          className="opacity-70"
+        />
+        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-offwhite via-offwhite/70 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-offwhite via-offwhite/70 to-transparent" />
+      </div>
+
+      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
         <motion.div
           className="flex items-center gap-2 px-3 py-1 rounded-full mb-4"
           initial={{ y: -20, opacity: 0 }}
@@ -28,7 +63,7 @@ export function CallToAction() {
         <div className="relative w-full max-w-sm overflow-hidden md:max-w-[600px] h-[200px] md:h-[220px] mb-16 flex justify-center items-center md:overflow-visible group/cta-images select-none">
           {/* background glow */}
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center -z-10">
-            <div className="w-[280px] h-[280px] md:w-[380px] md:h-[380px] bg-gold/10 rounded-full blur-3xl"></div>
+            <div className="cta-photo-glow w-[420px] h-[420px] md:w-[600px] md:h-[600px] bg-gold/[0.18] rounded-full blur-3xl"></div>
             <div className="absolute w-[200px] h-[200px] md:w-[260px] md:h-[260px] bg-navy/10 rounded-full blur-3xl translate-x-16"></div>
           </div>
 
